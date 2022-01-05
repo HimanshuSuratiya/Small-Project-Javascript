@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task-1 Move The Div</title>
+  </head>
+  <body>
+    <div id="div-1"></div>
+    <button class="Rotate">Rotate</button>
+    <script src="index.js"></script>
+  </body>
+  <style>
+    #div-1 {
+      border-radius: 25px; 
+      position: relative;
+      height: 150px;
+      width: 150px;
+      background-color: red;
+    }
+
+    @keyframes himanshu {
+      0%{
+          top: 0px;
+          left: 0px;
+      }
+      25%{ 
+        top: 0px;
+        left: 1200px;
+      }
+      50%{
+        left: 1200px;
+        top: 463px;
+      }
+      75%{
+        top: 463px;
+        left: 0px;
+      }
+      100%{
+        left: 0px;
+        top: 0px;
+      }
+    }
+
+    .Rotate {
+      height: 40px;
+      width: 160px;
+      cursor: pointer;
+      position: relative;
+      top: 180px;
+      left: 570px;
+      background-color: black;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+
+    button:hover {
+      color: black;
+      transition: 1s;
+      background-color: gray;
+      border-radius: 25px;
+    }
+  </style>
+</html>
